@@ -1,4 +1,3 @@
-// Online C compiler to run C program online
 #include <stdio.h>
 int selection(int *A,int i){
     int min,j,temp;
@@ -29,19 +28,16 @@ int insertion(int *A,int i){
     return 0;
 }
 int bubble(int *A,int i){
-    int k=1,t,j;
-    for(i=1;i<5;i++){
-        if(k==1){
-            k=0;
-            for(j=1;j<5;j++){
-                if(A[i]>A[i+1]){
-                    t=A[j];
-                    A[j]=A[i+1];
-                    A[i+1]=t;
-                    k=1;
-                }
+    int t,j;
+    for(i=0;i<4;i++){
+        for(j=0;j<4;j++){
+            if(A[j]>A[j+1]){
+                t=A[j];
+                A[j]=A[j+1];
+                A[j+1]=t;
             }
         }
+        
     }
     return 0;
 }
