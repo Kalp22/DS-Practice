@@ -58,15 +58,16 @@ int main()
     printf("Press 1 to do Merge Sort\n");
     printf("Press 2 to do Quick Sort\n");
     scanf("%d",&key);
-    if(key==1)
+    if(key==1){
         mergesort(A,0,e);
+        for(i=0;i<n;i++)
+            printf("%d",A[i]);
+    }
     // else if(key==2){
         // partition(A,i);
         // quick_sort(A,i);
     // }
     else
         printf("Please enter a Valid input");
-    for(i=0;i<n;i++)
-        printf("%d",A[i]);
     return 0;
 }
